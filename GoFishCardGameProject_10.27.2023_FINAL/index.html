@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go Fish Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>
+        Go Fish Game 🦈
+    </h1>
+
+    <p>
+        <input type="button" value="Start Game?" onclick="startGame()">
+    </p>
+
+    <p id="totalDeckHeader" hidden>
+        Total Deck:
+    </p>
+
+    <p id="totalDeck">
+
+    </p> 
+
+
+    <p id="playerCardsHeader" hidden>
+        Player's Cards:
+    </p>
+
+    <p id="playerCards">
+        
+    </p>
+
+    <p id="imageDeck" hidden>    
+        <img id="card1" height="65" width="50">
+        <img id="card2" height="65" width="50">
+        <img id="card3" height="65" width="50">
+        <img id="card4" height="65" width="50">
+        <img id="card5" height="65" width="50">
+        <img id="card6" height="65" width="50">
+        <img id="card7" height="65" width="50">
+        <img id="card8" height="65" width="50">
+        <img id="card9" height="65" width="50">
+        <img id="card10" height="65" width="50">
+    </p>
+
+    <p id="computerCardsHeader" hidden>
+        Computer's Cards:
+    </p>
+
+    <p id="computerCards">
+
+    </p>
+
+    <p id="imageDeckComputer" hidden>    
+        <img id="card1C1" height="65" width="50">
+        <img id="card2C1" height="65" width="50">
+        <img id="card3C1" height="65" width="50">
+        <img id="card4C1" height="65" width="50">
+        <img id="card5C1" height="65" width="50">
+        <img id="card6C1" height="65" width="50">
+        <img id="card7C1" height="65" width="50">
+        <img id="card8C1" height="65" width="50">
+        <img id="card9C1" height="65" width="50">
+        <img id="card10C1" height="65" width="50">
+    </p>
+
+
+    <p id="computer2CardsHeader" hidden>
+        Computer 2's Cards: 
+    </p>
+
+    <p id="computer2Cards">
+
+    </p>
+
+    <p id="imageDeckComputer2" hidden>    
+        <img id="card1C2" height="65" width="50">
+        <img id="card2C2" height="65" width="50">
+        <img id="card3C2" height="65" width="50">
+        <img id="card4C2" height="65" width="50">
+        <img id="card5C2" height="65" width="50">
+        <img id="card6C2" height="65" width="50">
+        <img id="card7C2" height="65" width="50">
+        <img id="card8C2" height="65" width="50">
+        <img id="card9C2" height="65" width="50">
+        <img id="card10C2" height="65" width="50">
+    </p>
+
+    <p id="turn">
+
+    </p>
+
+    <p id="playerChoose" hidden>
+        <input type ="button" id="chooseComputer" onclick="choseComputer()" value="Choose Computer">
+        <input type ="button" id="chooseComputer2" onclick="choseComputer2()" value="Choose Computer 2">
+    </p>
+
+
+    <p id="turns" hidden>
+        <input type="button" value="Player Turn" onclick="playerTurn()" id="playerTurnButton">
+        <input type="button" value="Computer Turn" onclick="computerTurn()" id="computerTurnButton">
+        <input type="button" value="Computer Two Turn" onclick="computer2Turn()" id="computer2TurnButton">
+    </p>
+
+    <h2 id="pairHeader" hidden>Number of Pairs: </h2>
+
+    <p id="playerSets">
+
+    </p>
+
+    <p id="computerSets">
+
+    </p>
+
+    <p id="computer2Sets">
+
+    </p>
+
+    <p id="winner">
+        
+    </p>
+</body>
+</html>

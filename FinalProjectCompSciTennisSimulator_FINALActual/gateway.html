@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Game Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="ResourceDirectory/tennisBallEmoji-removebg-preview.png">
+</head>
+<body>
+<p id = "mainHeader">
+    Welcome to the Tennis Simulator! 🎾
+</p>
+<video autoplay muted loop>
+    <source src="ResourceDirectory/The Last Dance 😢 Roger Federer vs Rafa Nadal (2019) _ The Last Game Of Their Final Grand Slam Match (1).mp4" type="video/mp4">
+    video isn't supported 
+</video>
+<p id = "mainCourtQuestion">
+    <label id="labelAnswer">What Court Would You Like? </label>
+</p>
+<p id = "mainCourtQuestion">
+    <label id="labelAnswer2">(Hard Court, Red Court, Grass Court)</label>
+</p>
+<p id = "mainCourtQuestion">
+    <input type="text" id="courtAnswer">
+    <input type="button" onclick="courtSelect(document.getElementById('courtAnswer').value)" value="Submit?" id="submitCourtAnswer">
+</p>
+<p>
+    
+</p>
+<p id = "mainCourtQuestion">
+    <label>What player would you like?</label>
+</p>
+<p id="mainCourtQuestion">
+    <label>(R. Federer, N. Djokovic, A. Agassi)</label>
+</p>
+<p id="mainCourtQuestion">
+    
+    <a href="subIndexOne.html" target="_blank">Players & UTR</a>
+</p>
+<p id="mainCourtQuestion">
+    <input type="text" id="playerAnswer">
+    <input type="button" onclick="playerSelect(document.getElementById('playerAnswer').value)" value="Submit?" id="submitPlayerAnswer">
+</p>
+<p id="mainCourtQuestion">
+    <input type="button" onclick="startGame()" value="Start?" id="startGame">
+</p>
+</body>
+</html>

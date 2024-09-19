@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tennis Game Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="ResourceDirectory/tennisBallEmoji-removebg-preview.png">
+</head>
+<body onload = "initialize()">
+
+<p>
+    Tennis Simulator Players and Stats 🎾
+</p>
+
+<div class="dropdown">
+    <button onclick="dropFunction()" class="dropbtn">Select</button>
+    <div id="myDropdown" class="dropdown-content">
+       <a href="main.html">Play!</a>
+       <a href="gateway.html">Select Players</a>
+       <a href="subIndexOne.html" target="_blank">Players & UTA</a>
+       <a href="https://olympics.com/en/news/tennis-rules-regulations-how-to-play-basics" target="_blank">Rules of Tennis</a>
+    </div>
+ </div>
+
+<table id="myTable">
+    <tr class="header">
+        <th style="width:20%;">Name</th>
+        <th style="width:20%">Hard Court</th>
+        <th style="width:20%">Grass Court</th>
+        <th style="width:20%">Red Court</th>
+        <th style="width:20%;">Universal Tennis Rating</th>
+    </tr>
+    <tr>
+        <td>Roger Federer</td>
+        <td>Advantage</td>
+        <td>Disadvantage</td>
+        <td>Advantage</td>
+        <td>16.21 UTR</td>
+    </tr>
+    <tr>
+        <td>Rafael Nadal</td>
+        <td>Disadvantage</td>
+        <td>Advantage</td>
+        <td>Advantage</td>
+        <td>16.27 UTR</td>
+    </tr>
+    <tr>
+        <td>Novak Djokovic</td>
+        <td>Disadvantage</td>
+        <td>Disadvantage</td>
+        <td>High Advantage</td>
+        <td>16.39 UTR</td>
+    </tr>
+    <tr>
+        <td>Andre Agassi</td>
+        <td>Advantage</td>
+        <td>Same</td>
+        <td>Disadvantage</td>
+        <td>15.5 UTR</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

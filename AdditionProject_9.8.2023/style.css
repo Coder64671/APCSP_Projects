@@ -1,0 +1,25 @@
+h1{
+    text-align: -webkit-center;
+}
+h2{
+    text-align: -webkit-center;
+}
+p{
+    text-align: -webkit-center;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+#forBadges{
+    text-align: -webkit-center;
+}
+#badges{
+    text-align: -webkit-center;
+}
+#toHomePage{
+    text-align: -webkit-center;
+}

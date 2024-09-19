@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sav Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="Source%20Directory/savAcademy.png">
+</head>
+<body>
+
+
+<div id="homePage">    
+<h1>Sav Academy Presents... </h1> 
+<h2>The Math Game!</h2>
+<!-- form action only works with type="submit" -->
+<form action="badges.html" id="forBadges">
+    <input type="submit" id="badgesButton" value="Badges">
+    <script>
+        document.getElementById("badgesButton").style.visibility = "hidden"
+    </script>
+  </form>
+<p>
+    <input type="button" onclick="startGame()" value="Start?" id="startGameButton">
+</p>
+<p>
+    <label for="nameInput" id="labelName">Please Enter Your Name: </label>
+    <input type="text" id="nameInput">
+</p>
+<p>
+    <input type="button" onclick="submitName()" value="Submit" id="submitName">
+</p>
+<p id="diffLabel">Please Select Your Difficulty:</p>
+<p>
+    <input type="button" onclick="easyMode()" value="Easy" id="easyMode">
+    <input type="button" onclick="mediumMode()" value="Medium" id="mediumMode">
+    <input type="button" onclick="hardMode()" value="Hard" id="hardMode">
+    <script>
+        document.getElementById("diffLabel").style.visibility = "hidden"
+        document.getElementById("labelName").style.visibility = "hidden"
+        document.getElementById("nameInput").style.visibility = "hidden"
+        document.getElementById("submitName").style.visibility = "hidden"
+        document.getElementById("easyMode").style.visibility = "hidden"
+        document.getElementById("mediumMode").style.visibility = "hidden"
+        document.getElementById("hardMode").style.visibility = "hidden"
+    </script>
+</p>
+<p id="symbLabel">Please Select What You Want To Be Tested On:</p>
+<p>
+    <input type="button" onclick="addition()" id="addition" value="Addition">
+    <input type="button" onclick="subtraction()" id="subtraction" value="Subtraction">
+    <input type="button" onclick="multiplication()" id="multiplication" value="Multiplication">
+    <input type="button" onclick="division()" id="division" value="Division">
+    <input type="button" onclick="mixed()" id="mixed" value="Mixed">
+    <script>
+        document.getElementById("symbLabel").style.visibility = "hidden"
+        document.getElementById("addition").style.visibility = "hidden"
+        document.getElementById("subtraction").style.visibility = "hidden"
+        document.getElementById("multiplication").style.visibility = "hidden"
+        document.getElementById("division").style.visibility = "hidden"
+        document.getElementById("mixed").style.visibility = "hidden"
+    </script>
+</p>
+<p id="question">
+
+</p>
+<p id="userAnswer">
+    <label for="answer" id="labelAnswer">Please Enter Your Answer: </label>
+    <input type="text" id="answer">
+    <script>
+        document.getElementById("answer").style.visibility = "hidden"
+        document.getElementById("labelAnswer").style.visibility = "hidden"
+    </script>
+        <input type="button" onclick="submitAnswer()" value="Submit Answer" id="submitAnswer">
+        <script>
+            document.getElementById("submitAnswer").style.visibility = "hidden"
+        </script>
+</p>
+
+<p id="correct_not">
+
+</p>
+<p id="attemptShow">
+
+</p>
+<p id="correct">
+    <span class="dot" id="circle1"></span>
+    <span class="dot" id="circle2"></span>
+    <span class="dot" id="circle3"></span>
+    <span class="dot" id="circle4"></span>
+    <span class="dot" id="circle5"></span>
+    <script>
+        document.getElementById("correct").style.visibility = "hidden"
+    </script>
+</p>
+</div>
+
+
+</div>
+</body>
+</html>

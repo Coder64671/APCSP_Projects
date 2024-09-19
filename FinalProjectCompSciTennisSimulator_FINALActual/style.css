@@ -1,0 +1,134 @@
+p{
+   text-align: center;
+   color: #1b007a;
+   font-size: 50px;
+}
+body{
+   background-color: #b1a494;
+   overflow: hidden;
+}
+
+.dropbtn {
+   background-color: #2980b9;
+   color: white;
+   padding: 16px;
+   font-size: 25px;
+   border: none;
+   cursor: pointer;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+   background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: flow;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f3f3f3;
+   min-width: 160px;
+   box-shadow: 0 8px 16px 0 rgb(54, 91, 126);
+   z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: #000000;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #b3c1dc;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+#myTable {
+   border-collapse: collapse; /* Collapse borders */
+   width: 100%; /* Full-width */
+   border: 1px solid #000000; /* Add a grey border */
+   font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+   text-align: left; /* Left-align text */
+   padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+   /* Add a bottom border to all table rows */
+   border-bottom: 1px solid #000000;
+}
+
+#myTable tr.header, #myTable tr:hover {
+   /* Add a grey background color to the table header and on hover */
+   background-color: #dce5fd;
+}
+
+video{
+   position: fixed; /* Position the video */
+   top: 0;
+   left: 0;
+   width: 100%; /* Make the video cover the entire viewport */
+   height: 100%;
+   object-fit: cover; /* Ensure the video maintains aspect ratio */
+   z-index: -1; /* Place the video behind other content */
+   filter: brightness(20%);
+}
+#mainHeader{
+   text-align: center;
+   color: white;
+}
+#mainCourtQuestion{
+   text-align: center;
+   color: white;
+   font-size:larger;
+}
+input{
+   background-color: #88c2f1;
+   border: none;
+   color: #002d5d;
+   padding: 8px 16px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: bold;
+   margin: 4px 2px;
+   opacity: 0.6;
+   transition: 0.3s;
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   border-radius: 30px;
+}
+input:hover {opacity: 1}
+a{
+   background-color: #88c2f1;
+   border: none;
+   color: #002d5d;
+   padding: 8px 16px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: bold;
+   margin: 4px 2px;
+   opacity: 0.6;
+   transition: 0.3s;
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   border-radius: 30px;
+}
+a:hover {opacity: 1}

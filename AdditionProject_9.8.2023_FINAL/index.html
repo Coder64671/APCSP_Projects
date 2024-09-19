@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sav Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="Source%20Directory/savAcademy.png">
+</head>
+<body>
+
+
+<div id="homePage">    
+<h1>Sav Academy Presents... </h1> 
+<h2>The Math Game!</h2>
+
+<p>
+    <input type="button" onclick="startGame()" value="Start?">
+</p>
+    <p id="labelForPlayerSelect">
+        Please Select Single or Multi Player:
+        <script>
+            document.getElementById("labelForPlayerSelect").style.visibility = "hidden"
+        </script>
+    </p>
+    <p>
+        <input type="button" onclick="singlePlayer()" value="Single Player" id="singlePlayer">
+        <input type="button" onclick="multiPlayer()" value="Multi Player" id="multiPlayer">
+        <script>
+            document.getElementById("singlePlayer").style.visibility = "hidden"
+            document.getElementById("multiPlayer").style.visibility = "hidden"
+        </script>
+    </p>
+<p>
+    <label for="nameInput" id="labelName">Please Enter Your Name: </label>
+    <input type="text" id="nameInput">
+    <input type="button" onclick="submitName()" value="Submit" id="submitName">
+</p>
+<p>
+    <label for="nameInputTwo" id="labelNameTwo">Please Enter Your Name, Player 2: </label>
+    <input type="text" id="nameInputTwo">
+    <input type="button" onclick="submitName()" value="Submit" id="submitNameTwo">
+</p>
+
+<p id="diffLabel">Please Select Your Difficulty:</p>
+<p>
+    <input type="button" onclick="easyMode()" value="Easy" id="easyMode">
+    <input type="button" onclick="mediumMode()" value="Medium" id="mediumMode">
+    <input type="button" onclick="hardMode()" value="Hard" id="hardMode">
+    <script>
+        document.getElementById("diffLabel").style.visibility = "hidden"
+        document.getElementById("labelName").style.visibility = "hidden"
+        document.getElementById("nameInput").style.visibility = "hidden"
+        document.getElementById("labelNameTwo").style.visibility = "hidden"
+        document.getElementById("nameInputTwo").style.visibility = "hidden"
+        document.getElementById("submitName").style.visibility = "hidden"
+        document.getElementById("submitNameTwo").style.visibility = "hidden"
+        document.getElementById("easyMode").style.visibility = "hidden"
+        document.getElementById("mediumMode").style.visibility = "hidden"
+        document.getElementById("hardMode").style.visibility = "hidden"
+    </script>
+</p>
+<p id="symbLabel">Please Select What You Want To Be Tested On:</p>
+<p>
+    <input type="button" onclick="addition()" id="addition" value="Addition">
+    <input type="button" onclick="subtraction()" id="subtraction" value="Subtraction">
+    <input type="button" onclick="multiplication()" id="multiplication" value="Multiplication">
+    <input type="button" onclick="division()" id="division" value="Division">
+    <input type="button" onclick="mixed()" id="mixed" value="Mixed">
+    <script>
+        document.getElementById("symbLabel").style.visibility = "hidden"
+        document.getElementById("addition").style.visibility = "hidden"
+        document.getElementById("subtraction").style.visibility = "hidden"
+        document.getElementById("multiplication").style.visibility = "hidden"
+        document.getElementById("division").style.visibility = "hidden"
+        document.getElementById("mixed").style.visibility = "hidden"
+    </script>
+</p>
+<p id="question">
+
+</p>
+<p id="userAnswer">
+    <label for="answer" id="labelAnswer">Please Enter Your Answer: </label>
+    <input type="text" id="answer">
+    <script>
+        document.getElementById("answer").style.visibility = "hidden"
+        document.getElementById("labelAnswer").style.visibility = "hidden"
+    </script>
+        <input type="button" onclick="submitAnswer()" value="Submit Answer" id="submitAnswer">
+        <script>
+            document.getElementById("submitAnswer").style.visibility = "hidden"
+        </script>
+</p>
+<p id="userTwoAnswer">
+    <label for="answerTwo" id="labelTwoAnswer">Please Enter Your Answer, Player 2: </label>
+    <input type="text" id="answerTwo">
+    <script>
+        document.getElementById("answerTwo").style.visibility = "hidden"
+        document.getElementById("labelTwoAnswer").style.visibility = "hidden"
+    </script>
+        <input type="button" onclick="submitAnswerTwo()" value="Submit Answer" id="submitAnswerTwo">
+        <script>
+            document.getElementById("submitAnswerTwo").style.visibility = "hidden"
+        </script>
+</p>
+
+<p id="correct_not">
+
+</p>
+<p id="multDisplay">
+
+</p>
+    <p id = "earnedBadge">
+
+    </p>
+<p id="attemptShow">
+
+</p>
+<p id="correct">
+    <span class="dot" id="circle1"></span>
+    <span class="dot" id="circle2"></span>
+    <span class="dot" id="circle3"></span>
+    <span class="dot" id="circle4"></span>
+    <span class="dot" id="circle5"></span>
+    <script>
+        document.getElementById("correct").style.visibility = "hidden"
+    </script>
+</p>
+    <br>
+    <h1 id="badgesNameHeader"></h1>
+    <p id="helper">They'll show up as you keep doing questions!</p>
+    <script>
+        document.getElementById("badgesNameHeader").style.visibility = "hidden"
+        document.getElementById("helper").style.visibility = "hidden"
+    </script>
+    <br>
+    <p id="badge1Text">
+        <img src="Source Directory/Participation-badge.png" id="badge1" width="300" height="300">
+    </p>
+    <br>
+    <p id="badge2Text">
+        <img src="Source Directory/5questionsBadge.png" id="badge2" width="200" height="230">
+    </p>
+    <br>
+    <p id="badge3Text">
+        <img src="Source Directory/10questionsBadge.png" id="badge3" width="200" height="230">
+    </p>
+    <br>
+    <p>
+        <img src="Source Directory/20questionsBadge.png" id="badge4" width="230" height="230">
+    </p>
+    <br>
+    <p>
+        <img src="Source Directory/courseCompletionAward.png" id="badge5">
+    </p>
+        <script>
+        document.getElementById("badge1").style.visibility = "hidden"
+        document.getElementById("badge2").style.visibility = "hidden"
+        document.getElementById("badge3").style.visibility = "hidden"
+        document.getElementById("badge4").style.visibility = "hidden"
+        document.getElementById("badge5").style.visibility = "hidden"
+        </script>
+
+</div>
+
+</body>
+</html>

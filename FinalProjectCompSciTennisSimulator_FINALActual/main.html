@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tennis Game Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="ResourceDirectory/tennisBallEmoji-removebg-preview.png">
+</head>
+<body onload = "initialize()">
+
+<p>
+    Welcome to the Tennis Simulator 🎾!
+</p>
+
+
+<div class="dropdown">
+   <button onclick="dropFunction()" class="dropbtn">Select</button>
+   <div id="myDropdown" class="dropdown-content">
+      <a href="main.html">Play!</a>
+      <a href="gateway.html">Select Players</a>
+      <a href="subIndexOne.html" target="_blank">Players & UTR</a>
+      <a href="https://olympics.com/en/news/tennis-rules-regulations-how-to-play-basics" target="_blank">Rules of Tennis</a>
+   </div>
+</div>
+<p id="scoring">
+</p>
+<p>   
+    <canvas id="canvas" width="1500" height="700"></canvas>
+</p>
+
+
+
+</body>
+</html>

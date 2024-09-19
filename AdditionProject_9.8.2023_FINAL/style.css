@@ -1,0 +1,48 @@
+body{
+    background-color: #C6DDF0;
+}
+h1{
+    text-align: -webkit-center;
+    color: #002d5d;
+}
+h2{
+    text-align: -webkit-center;
+    color: #002d5d;
+}
+p{
+    text-align: -webkit-center;
+    color: #002d5d;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+#forBadges{
+    text-align: -webkit-center;
+}
+#badges{
+    text-align: -webkit-center;
+}
+#toHomePage{
+    text-align: -webkit-center;
+}
+input{
+    background-color: #ACCBE1;
+    border: none;
+    color: #002d5d;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input:hover {opacity: 1}
